@@ -4,10 +4,28 @@
   <meta charset="utf-8">
   <title>AJAX with jQuery</title>
   <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <<link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="../jquery-3.2.1.min.js"></script>
 
 
 <script>
+  $(document).ready(function () {
+     $('form').submit( function(evt) {
+        evt.preventDefault();
+
+        // select the form and pull out its action attribute
+        var url = $(this).attr("action");
+
+        // selct the form and run its serialize method on it
+        var formData = $(this).serialize(); 
+
+        $.post(url, formData, function() {
+            $('#signup').html("<p>Thanks for signing up! </p>");
+        }); //end post
+
+     }); //end submit
+
+  }); //end ready
 
   </script>
 </head>
