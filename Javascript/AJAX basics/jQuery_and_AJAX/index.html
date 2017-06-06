@@ -16,6 +16,12 @@
 
   function sendAJAX() {
     $('#ajax').load('dataHTML.html');
+    
+    //commened code below works like $('#ajax').load('dataHTML.html');, its just longer to write
+    // $.get('dataHTML.html', function(response) {
+    //   $('#ajax').html(response);
+    // })
+
     $('#load').hide();
   }
 
