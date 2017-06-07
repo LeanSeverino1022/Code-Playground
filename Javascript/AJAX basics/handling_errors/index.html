@@ -11,9 +11,8 @@
    $.get('missing.html', function(data) {
        $('#myDiv').html(data);
    }).fail(function (jqXHR) {
-     
-     var errorMessage = "<p>Sorry! There is an error. ";
-     errorMessage += "Please try again later.</p>";
+     var errorMessage = "<p>Sorry! There' an error. <br>" + jqXHR.status + "<br>" + jqXHR.statusText + "<br>" ;
+     errorMessage += "<br>Please try again later.</p>";
      $('#myDiv').html(errorMessage);
    });
   }); // end ready
