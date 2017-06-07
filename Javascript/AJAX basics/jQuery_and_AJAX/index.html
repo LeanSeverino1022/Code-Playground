@@ -2,45 +2,47 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>AJAX with JavaScript</title>
-  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <title>AJAX with JavaScript</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
 
-  <!-- link to our local jquery library file-->
-  <script src="../jquery-3.2.1.min.js"></script>
+    <!-- link to our local jquery library file-->
+    <script src="../jquery-3.2.1.min.js"></script>
 
+    <script>
 
-  <script>  
+        function sendAJAX() {
+            $('#ajax').load('dataHTML.html');
 
-  function sendAJAX() {
-    $('#ajax').load('dataHTML.html');
-    
-    //commened code below works like $('#ajax').load('dataHTML.html');, its just longer to write
-    // $.get('dataHTML.html', function(response) {
-    //   $('#ajax').html(response);
-    // })
+            //commented code below works like $('#ajax').load('dataHTML.html');, its just longer to write
+            // $.get('dataHTML.html', function(response) {
+            //   $('#ajax').html(response);
+            // })
 
-    $('#load').hide();
-  }
-
-  </script>
+            $('#load').hide();
+        }
+        
+    </script>
 </head>
-<body>
-  <div class="grid-container centered">
-    <div class="grid-100">
-      <div class="contained">
-        <div class="grid-100">
-          <div class="heading">            
-          </div>
-          <button id="load" onclick="sendAJAX()" class="button">Load data!</button>
-          <ul id="ajax">
 
-          </ul>
+<body>
+    <div class="grid-container centered">
+        <div class="grid-100">
+            <div class="contained">
+                <div class="grid-100">
+                    <div class="heading">
+                    </div>
+                    <button id="load" onclick="sendAJAX()" class="button">Load data!</button>
+                    <ul id="ajax">
+
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </body>
+
 </html>

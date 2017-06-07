@@ -8,7 +8,25 @@
         <link rel="stylesheet" href="../../css/normalize.css">   
 		<style>
 			body { width: 90%; margin: 0 auto; }
-			ul li { line-height: 1.5; }
+			ul li { line-height: 1.5em; }
+			a,p { font-size: 13.3px; }
+			p { margin: 0}
+			a {
+				color: #0645ad;
+				
+				text-decoration: none; /* no underline */
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+
+			.toc_lvl_2 {
+				text-indent: 20px;
+			}
+			.toc_lvl_2::before {
+				content: "» ";
+				color: red;
+			}
 		</style>
     </head>
 
@@ -17,9 +35,23 @@
 		<h3>AJAX Test Projects</h3>
 		
         <ul>
-		<li><a href="basic_sample/"> basic ajax (no Jquery)</a> </li>
-		<li><a href="basic_sample_2/"> basic ajax 2 (no Jquery) </a> </li>
-		<li><a href="jQuery_and_AJAX/"> Jquery with Ajax</a></li>		
+		<li><a href="basic_sample/">1. Basic AJAX without jQuery 1 </a> </li>
+		<li><a href="basic_sample_2/">2. Basic AJAX without jQuery 2 </a> </li>
+		<li><a href="jQuery_and_AJAX/">3. AJAX with jQuery</a>
+			<p class="toc_lvl_2">using jQuery load() Method</p>
+		</li>		
+		<li><a href="jQuery_and_AJAX_2/">4. TTH Project (<b>with jQuery</b>)</a>
+			<p class="toc_lvl_2"><a href="jQuery_and_AJAX_2/js/widget.js">link to js file</a></p>
+			<p class="toc_lvl_2">use of jQuery.getJSON()</p>
+			<p class="toc_lvl_2">use of jQuery.each()</p>
+		</li>
+		<li><a href="jQuery_and_AJAX_2/vanilla_ajax.html">4. TTH Project (<b>NO jQuery</b>)</a></li>		
+		<li><p>5. Posting Data with jQuery </p>
+			<p class="toc_lvl_2"><a href="posting_data_w_jquery/">Using jQuery.post</a></p>
+			<p class="toc_lvl_2"><a href="posting_data_w_jquery/index_2.html">Using jQuery.ajax</a></p>
+		</li>
+		<li><a href="handling_errors/">6. Handling Errors</a></li>		
+
 		</ul>
 
     </body>       
