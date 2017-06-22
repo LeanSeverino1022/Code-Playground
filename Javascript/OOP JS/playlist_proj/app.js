@@ -3,8 +3,12 @@ var playlist = new Playlist();
 var Buloy = new Song("Buloy", "Parokya", "3:00");
 var Buloy2 = new Song("Buloy2", "Parokya2", "3:00");
 
+var Movie_1 = new Movie("Movie 1", 2019, "2 hrs");
+
 playlist.add(Buloy);
 playlist.add(Buloy2);
+
+playlist.add(Movie_1);
 
 var playlistElement = document.getElementById('playlist');
 
