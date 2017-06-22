@@ -5,3 +5,7 @@ var Buloy2 = new Song("Buloy2", "Parokya2", "3:00");
 
 playlist.add(Buloy);
 playlist.add(Buloy2);
+
+var playlistElement = document.getElementById('playlist');
+
+playlist.renderInElement(playlistElement);

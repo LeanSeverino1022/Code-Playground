@@ -1,4 +1,4 @@
-function Playlist() {
+ function Playlist() {
     // when we create a playlist, we 1st create an empty array of songs 
     this.songs = [];
     this.nowPlaylingIndex = 0;
@@ -29,6 +29,10 @@ Playlist.prototype.next = function() {
     this.play();
 };
 
-Playlist.prototype.renderIn = function() {
-
+Playlist.prototype.renderInElement = function(playlist_items) {
+    
+    playlist_items.innerHTML = "";
+    for(let i = 0; i < this.songs.length; i++) {
+        playlist_items.innerHTML += this.songs[i].toHTML();
+    }
 };
