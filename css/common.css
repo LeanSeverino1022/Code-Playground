@@ -1,0 +1,89 @@
+
+/*NOTEBOOK DESIGN:
+    *I Added my own css but bulk of the code is not my own :) Thanks to...   
+    src: CSS Notebook Paper by Jesse Couch :)
+
+    added my own custom style to:
+     - make it responsive
+     - minor changes to the look
+
+    Forked pen: https://codepen.io/IamPuyih/pen/VWrLxB
+
+    HOW TO USE:
+      #notebook-paper
+        #notebook-header
+          h1
+        #content
+          p
+
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1;
+  font-family: helvetica neue, helvetica, arial, sans-serif;
+  font-weight: 200;
+}
+
+#notebook-paper {
+  width: 90%;
+  height: 1109px;
+  background: linear-gradient(to bottom, white 29px, #00b0d7 1px);
+  margin: 50px auto;
+  background-size: 100% 30px;
+  position: relative;
+  padding-top: 120px;
+  padding-left: 7%;
+  padding-right: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), 0px 0px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), 0px 0px 6px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), 0px 0px 6px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), 0px 0px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+#notebook-paper:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 7%;
+  height: 100%;
+  width: 1px;
+  background: #db4034;
+}
+#notebook-paper #notebook-header {
+  height: 100px;
+  width: 100%;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#notebook-paper #notebook-header h1 {
+  margin: 0;
+  font-size: 40px;
+  line-height: 40px;
+  padding: 77px 20px 0 8%;
+}
+#notebook-paper #content {
+  margin-top: 67px;
+  font-size: 20px;
+  line-height: 30px;
+}
+#notebook-paper #content p {
+  margin: 0 0 30px 0;
+  font-size: 100%/*of notebook-paper #content*/;
+}
+
+
+/*END OF NOTEBOOK DESIGN*/
