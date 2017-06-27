@@ -28,12 +28,12 @@ $(document).ready(function(){
         
         $.each(dat, function(key, val) {
         
-        if(val.available === true ){
-            roomHTML += '<li class="empty">' + val.room + '</li>';
-        }
-        else {
-            roomHTML += '<li class="full">' + val.room + '</li>';
-        }
+            if(val.available === true ){
+                roomHTML += '<li class="empty">' + val.room + '</li>';
+            }
+            else {
+                roomHTML += '<li class="full">' + val.room + '</li>';
+            }
         
         }); //end each
         
