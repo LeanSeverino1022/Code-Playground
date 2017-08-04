@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>#TITLE</title>
+        <link rel="stylesheet" href="../../css/normalize.css">
+		<link rel="stylesheet" href="../../css/common.css">      
+		<style>
+			body { width: 90%; margin: 0 auto; }
+			ul li { line-height: 1.5em; }
+			a,p { font-size: 13.3px; }
+			p { margin: 0}
+			a {
+				color: #0645ad;
+				
+				text-decoration: none; /* no underline */
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+
+			.toc_lvl_2 {
+				text-indent: 20px;
+			}
+			.toc_lvl_2::before {
+				content: "» ";
+				color: red;
+			}
+
+			.notes-sec {
+				background: 
+			}
+		</style>
+    </head>
+
+    <body>
+		<h3><a href="../../">BACK</a></h3>
+		<h3>ES2015</h3>
+		<!--learning @ tth-->
+		
+        <ul>		
+		<li>
+			<p> 1. let and const keyword (see console) </p>
+			<ul> 				
+				<li class="toc_lvl_2"><a href="let and const/var-scope.js">var-scope.js</a></li>
+				<li class="toc_lvl_2"><a href="let and const/let-loop-scope.js">let-loop-scope.js</a></li>
+				<li class="toc_lvl_2"><a href="let and const/duplicate-variable.js">duplicate-variable.js</a></li>
+				<li class="toc_lvl_2"><a href="let and const/nested-scope.js">nested-scope.js</a></li>
+			</ul>
+		</li>
+		<li>
+			<p> 1. Template Strings </p>
+			<ul> 				
+				<li class="toc_lvl_2"><a href="let and const/var-scope.js">var-scope.js</a></li>
+				<li class="toc_lvl_2"><a href="let and const/let-loop-scope.js">let-loop-scope.js</a></li>
+				<li class="toc_lvl_2"><a href="let and const/duplicate-variable.js">duplicate-variable.js</a></li>
+				<li class="toc_lvl_2"><a href="let and const/nested-scope.js">nested-scope.js</a></li>
+			</ul>
+		</li>
+		
+
+		</ul>
+
+		<div id="notebook-paper">
+			<div id="notebook-header">
+				<h1>ES2015</h1>
+			</div>
+			<div id="content">
+				<p> Learn how to use let and const becuse Javascript's' lack of constraints has caused much confusion around block scoping and variable re-assignment.</p>
+				<p>the use strict statement prevents you from making mistakes in your code coz it will throw and exception at runtime</p>
+				<p> Use let when you need to reassign a variable or scope a variable at the block level</p>
+				<p> Use const when you don't want a variable's value to change throughout your project</p>
+			</div>
+			
+		</div>
+	<script src="let and const/var-scope.js"></script>
+	<script src="let and const/let-loop-scope.js"></script>
+	<script src="let and const/duplicate-variable.js"></script>
+	<script src="let and const/nested-scope.js"></script>
+	<!--template strings-->
+	<script src="simple-string.js"></script>
+	<script src="complex-string.js"></script>
+    </body>       
+</html>
+
+
