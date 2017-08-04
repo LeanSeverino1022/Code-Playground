@@ -11,8 +11,9 @@ function Player(team, position) {
 var Kobe = new Player("Lakers", 'G');
 var Dirk = new Player("Dallas", 'F');
 
-var test1 = '<p>' + Object.values(Dirk) + '</p>';
-test1 += '<p>' + Object.values(Kobe) + '</p>'; 
+
+var test1 = '<p>' + Object.values(Dirk) + '</p>'; //Dallas,F
+test1 += '<p>' + Object.values(Kobe) + '</p>';  //Lakers,G
 
 var content1 =  document.getElementById("cont-cfp");
 content1.innerHTML += "<p>" + test1 + "</p>";
